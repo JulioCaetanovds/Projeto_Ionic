@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-img src="assets/logo.png" alt="Imagem da Empresa" style="width: 50px;" slot="start"></ion-img>
+    <ion-title>Educação Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Educação Online</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <!-- Apresentação do tema -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tema Principal</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Educação Online: Conectando o Mundo ao Conhecimento, Rompendo Barreiras Geográficas e Adaptando-se às Necessidades Individuais dos Alunos.
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Cabeçalho com destaques -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Destaques</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Destaque 1 -->
+        <ion-card-title>{{ destaques[0] }}</ion-card-title>
+        <ion-card-content>{{ destaques[1] }}</ion-card-content>
+
+        <!-- Destaque 2 -->
+        <ion-card-title>{{ destaques[2] }}</ion-card-title>
+        <ion-card-content>{{ destaques[3] }}</ion-card-content>
+
+        <!-- Destaque 3 -->
+        <ion-card-title>{{ destaques[4] }}</ion-card-title>
+        <ion-card-content>{{ destaques[5] }}</ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+  <!-- Conteúdo principal da página -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Histórico</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ historico }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Objetivos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ objetivos }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{ contato }}</ion-title>
+  </ion-toolbar>
+</ion-footer>
